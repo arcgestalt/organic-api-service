@@ -1,0 +1,23 @@
+repos:
+  - repo: local
+    hooks:
+      - id: biome-format
+        name: Biome Format
+        entry: pnpm run format
+        language: system
+        files: \.(js|ts|tsx|jsx|json|css)$
+        pass_filenames: false
+
+      - id: biome-lint
+        name: Biome Lint
+        entry: pnpm run lint
+        language: system
+        files: \.(js|ts|tsx|jsx|json|css)$
+        pass_filenames: false
+
+      - id: typecheck
+        name: TypeScript Typecheck
+        entry: pnpm run typecheck
+        language: system
+        files: \.(js|ts|tsx|jsx)$
+        pass_filenames: false
