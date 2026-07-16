@@ -14,10 +14,7 @@
   },
   "overrides": [
     {
-      "includes": [
-        "dist/**",
-        "node_modules/**"
-      ],
+      "includes": ["dist/**", "node_modules/**"],
       "linter": {
         "enabled": false
       },
