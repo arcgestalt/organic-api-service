@@ -1,6 +1,9 @@
 {
   "name": "organic-api-service",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=26.5.0"
+  },
   "description": "Cloudflare Worker API for organic-app",
   "main": "src/index.ts",
   "scripts": {
@@ -11,30 +14,30 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "format": "biome format . --write",
-    "lint": "biome lint . --apply-unsafe",
+    "lint": "biome lint . --write --unsafe",
     "prepare": "git config core.hooksPath .githooks"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@biomejs/biome": "^1.8.3",
-    "@cloudflare/workers-types": "^4.20240718.0",
-    "@types/node": "^20.14.11",
-    "hono": "^4.4.12",
-    "typescript": "^5.5.3",
-    "wrangler": "^3.65.1",
-    "vitest": "^2.0.3",
-    "drizzle-kit": "^0.31.10"
+    "@biomejs/biome": "^2.5.4",
+    "@cloudflare/workers-types": "^5.20260715.1",
+    "@types/node": "^26.1.1",
+    "drizzle-kit": "^0.31.10",
+    "hono": "^4.12.30",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10",
+    "wrangler": "^4.111.0"
   },
   "dependencies": {
-    "drizzle-orm": "^0.31.2",
-    "@libsql/client": "^0.6.2",
-    "firebase-admin": "^12.2.0",
-    "@stripe/stripe-js": "^4.0.0",
     "@axiomhq/js": "^1.8.0",
-    "@sentry/browser": "^7.114.0",
-    "@sentry/node": "^7.114.0",
-    "@sentry/integrations": "^7.114.0"
+    "@libsql/client": "^0.17.4",
+    "@sentry/browser": "^10.65.0",
+    "@sentry/integrations": "^7.114.0",
+    "@sentry/node": "^10.65.0",
+    "@stripe/stripe-js": "^9.10.0",
+    "drizzle-orm": "^0.45.2",
+    "firebase-admin": "^14.1.0"
   }
 }
