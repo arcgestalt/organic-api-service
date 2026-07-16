@@ -10,7 +10,8 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "format": "biome format . --write",
-    "lint": "biome lint . --apply-unsafe"
+    "lint": "biome lint . --apply-unsafe",
+    "prepare": "git config core.hooksPath .githooks"
   },
   "keywords": [],
   "author": "",
