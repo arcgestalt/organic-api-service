@@ -10,7 +10,9 @@
     "strict": true,
     "skipLibCheck": true,
     "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+    "incremental": true,
+    "tsBuildInfoFile": "node_modules/.tsconfig.tsbuildinfo"
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
