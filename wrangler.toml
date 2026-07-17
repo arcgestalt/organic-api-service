@@ -6,8 +6,14 @@ workers_dev = false
 [vars]
 CLOUDFLARE_API_ENVIRONMENT = "production"
 
+[observability]
+enabled = false
+
 [env.staging]
 name = "organic-api-service-staging"
 
 [env.staging.vars]
 CLOUDFLARE_API_ENVIRONMENT = "staging"
+
+[env.staging.observability]
+enabled = false
