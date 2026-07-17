@@ -3,5 +3,11 @@ main = "src/index.ts"
 compatibility_date = "2026-07-16"
 workers_dev = false
 
+[vars]
+CLOUDFLARE_API_ENVIRONMENT = "production"
+
 [env.staging]
 name = "organic-api-service-staging"
+
+[env.staging.vars]
+CLOUDFLARE_API_ENVIRONMENT = "staging"
