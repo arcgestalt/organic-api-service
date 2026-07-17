@@ -2,3 +2,6 @@ name = "organic-api-service"
 main = "src/index.ts"
 compatibility_date = "2026-07-16"
 workers_dev = false
+
+[env.staging]
+name = "organic-api-service-staging"
