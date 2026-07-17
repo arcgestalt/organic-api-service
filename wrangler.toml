@@ -11,6 +11,7 @@ enabled = false
 
 [env.staging]
 name = "organic-api-service-staging"
+workers_dev = false
 
 [env.staging.vars]
 CLOUDFLARE_API_ENVIRONMENT = "staging"
