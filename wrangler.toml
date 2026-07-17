@@ -1,3 +1,3 @@
-name = "organic-api-service"
+name = "staging-organic-api-service"
 main = "src/index.ts"
 compatibility_date = "2026-07-16"
